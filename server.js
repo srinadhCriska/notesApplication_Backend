@@ -15,6 +15,7 @@ const { updateDataValidation, delNotesValidation, modifyNotesValidation } = requ
 
 // IN-BUILT MIDDLEWARE 
 app.use(express.json())
+
 app.use(cors({
       origin:"http://localhost:5174"
 }))
@@ -39,7 +40,7 @@ app.patch("/updateNotes",modifyNotesValidation,modifyNotesController);
 // let val="2026-04-27T19:43:33.000Z";
 
 // let formatted=format(new Date(val),"yyyy-MM-dd 'at' hh:mm a")
-// console.log(formatted)
-  const now = new Date();
-  const formattedDate = format(now, "yyyy-MM-dd hh-mm-ss");
-  console.log(formattedDate)
+// // console.log(formatted)
+//   const now = new Date(); built in method to log the date
+//   const formattedDate = format(now, "yyyy-MM-dd hh-mm-ss");
+//   console.log(formattedDate)

@@ -33,7 +33,7 @@ const addNewNotesQuery = async (data) => {
 // DEL NOTES QUERY
 
 const delNotesQuery = async (notesId) => {
-  console.log(notesId,"Called In Query");
+  console.log(notesId,"Called In Delete Query");
   const delQuery = "DELETE FROM notes WHERE id=?";
   try {
     await db.query(delQuery, [notesId]);
